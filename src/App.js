@@ -1,5 +1,5 @@
 import NavBar from './componentes/NavBar/NavBar';
-
+import SeccionCentral from './componentes/ItemListContainer/ItemListContainer';
 function App() {
  
 
@@ -7,6 +7,9 @@ function App() {
     <>
     <div>
       <NavBar/>
+    </div>
+    <div>
+      <SeccionCentral/>
     </div>
 
 

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import fresh from '../Imagenes/fresh.jpg'
+import CartWidget from '../CartWidget/CartWidget';
 
 
 
@@ -31,7 +32,7 @@ function NavBar() {
             </NavDropdown>
             <Nav.Link href="#Blog">Blog</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
-            
+            <Nav.Link href="#carrito"  ><CartWidget /> </Nav.Link>
            
      
             

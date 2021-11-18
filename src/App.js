@@ -1,6 +1,10 @@
 import NavBar from './componentes/NavBar/NavBar';
 import SeccionCentral from './componentes/ItemListContainer/ItemListContainer';
+
+
 function App() {
+
+
  
 
   return (
@@ -11,6 +15,7 @@ function App() {
     <div>
       <SeccionCentral/>
     </div>
+    
 
 
     </>

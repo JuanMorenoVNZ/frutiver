@@ -1,0 +1,25 @@
+
+  .card {
+    width: 300px;
+   
+    
+  }
+
+  .conta{
+      display: flex;
+      justify-content: center;
+  }
+
+  .card-img-top {
+      height: 150px;
+  }
+  p.card-text{
+      font-size: 2rem;
+  }
+  .boton{
+      font-display: none;
+  }
+  h5.btn-secondary{
+      margin: 0 10px 0 10px;
+  }
+  

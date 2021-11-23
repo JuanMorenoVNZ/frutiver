@@ -2,6 +2,7 @@ import React from 'react';
 import '../NavBar/NavBar.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import ItemCount from '../ItemCount/ItemCount'
+import ItemList from '../ItemList/ItemList';
 
 
 
@@ -17,9 +18,12 @@ const SeccionCentral = () => {
          <div className="titulo">
              
              
-             <div>
-                 <ItemCount initial={0} stock={10} title={"Fresas"} />
+             <div className="subBor">
+             <ItemList />
+
+            
              </div>
+            
 
         </div>
        

@@ -19,9 +19,17 @@
 
 
   .titulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
+
+    height: 100%;
     
+  }
+
+  .subBor{
+
+    display: grid;
+   margin: 20px 0 0 20px;
+    grid-template-rows: 100%;
+    grid-template-areas: "foto1 foto2 foto3";
+   text-align: center;
+
   }

@@ -13,7 +13,7 @@ function App() {
       <NavBar/>
     </div>
     <div>
-      <SeccionCentral/>
+      <SeccionCentral />
     </div>
     
 

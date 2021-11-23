@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Item from "../Item/Item"
-import Imagenes from '../Imagenes/Imagen'
+
 
 
 

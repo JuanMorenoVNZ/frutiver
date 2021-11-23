@@ -2,8 +2,8 @@ import React from 'react';
 import './NavBar.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-import fresh from '../Imagenes/fresh.jpg'
 import CartWidget from '../CartWidget/CartWidget';
 
 
@@ -14,7 +14,7 @@ function NavBar() {
     <div className="NavBar">
         <Navbar  bg="black" variant="dark" sticky="top" expand="sm" collapseOnSelect>
             <Navbar.Brand>
-                <img src={fresh} width="70px" height="60px"/>
+                <img src='/Imagenes/fresh.jpg' width="70px" height="60px"/>
                 Mundo Fresco
 
                 

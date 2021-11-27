@@ -33,3 +33,15 @@ const ItemCount = ({initial, stock}) =>  {
 }
 
 export default ItemCount;
+
+// const AlgoVaPasar = () => {
+//     return new Promise((resolve, reject) => {
+//         if(true){
+//             resolve('Hey todo esta bien')
+//         }else{
+//             reject('Oh no lo hice mal')
+//         }
+//     })
+// }
+
+// AlgoVaPasar()

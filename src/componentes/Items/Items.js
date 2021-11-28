@@ -3,14 +3,16 @@ export const items = [
      title: 'Fresas',
      price: 5,
      pictureUrl: '/Imagenes/foto1.jpg',
-     stock: 10
+     stock: 10,
+     detail: "La Fresa es un producto que aporta vitaminas y su consumo diario"
  },
  {
      id: '2',
      title: 'Durazno',
      price: 6,
      pictureUrl: '/Imagenes/foto2.jpg',
-     stock: 10
+     stock: 10,
+    
  },
  {
      id: '3',

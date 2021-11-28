@@ -29,7 +29,8 @@
     display: grid;
    margin: 20px 0 0 20px;
     grid-template-rows: 100%;
-    grid-template-areas: "foto1 foto2 foto3";
+    grid-template-areas: "foto1 foto2 foto3 foto4";
    text-align: center;
+   margin: 20px 0 50px 0;
 
   }

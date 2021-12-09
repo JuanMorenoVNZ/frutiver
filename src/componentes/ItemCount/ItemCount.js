@@ -5,7 +5,7 @@ import '../Item/Item.css'
 
  
 
-const ItemCount = ({initial, stock}) =>  {
+const ItemCount = ({initial, stock, onAdd}) =>  {
     let [number, setNumber] = useState(initial)
 
     const incrementar = () => {
@@ -17,6 +17,7 @@ const ItemCount = ({initial, stock}) =>  {
         if (number > 0) setNumber(--number)
     };
 
+    
    
     
   
@@ -26,7 +27,14 @@ const ItemCount = ({initial, stock}) =>  {
             <div className="conta btn btn-secondary">
             
             <button className="btn btn-secondary" onClick={incrementar} disabled={number === stock}>+</button><h5 className="btn-secondary">{number}</h5><button className="btn btn-secondary" onClick={disminuir}  disabled={number === initial}>-</button>
+            
             </div>
+            
+            <button descriButon  onClick={() => onAdd(number)} disabled={ number === 0}>
+                <h4> Agregar al carrito</h4>
+                </button>
+
+            
            
         </Fragment>
     )

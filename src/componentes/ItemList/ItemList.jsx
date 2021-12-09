@@ -16,11 +16,8 @@ const ItemList = ({ data }) => {
             { data === [] ? null : data.map((product,i) => {
                 return(
                     <Item
-                        key={product.id}
-                        title={product.title}
-                        stock={product.stock}
-                        price={product.price}
-                        pictureUrl={product.pictureUrl}
+                    {...product} key={product.id}
+                       
                     />
                 )
             })}

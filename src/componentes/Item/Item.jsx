@@ -3,26 +3,33 @@ import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
+import { Link } from 'react-router-dom'
 
-const Item = ({title,  price, description, pictureUrl}) => {
+const Item = ({id, title,  price, description, pictureUrl, stock}) => {
     return(
+        
         <Card>
             <Card.Body>
+            
                 <Card.Title>
                     {title}
                 </Card.Title>
+                <Link to={`/product/${id}`} className="ItemLine">
                 <Card.Img
                     variant="top"
                     src={pictureUrl} 
                 />
+                </Link>
                 <Card.Text>
                     ${price}
                 </Card.Text>
-               
-                 <ItemCount initial={0} stock={10} />
+                
+               <ItemCount initial={0} stock={stock} />
+                 
                 
             </Card.Body>
         </Card>
+       
     )
 }
 

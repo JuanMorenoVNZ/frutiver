@@ -28,9 +28,31 @@
 
     display: grid;
    margin: 20px 0 0 20px;
-    grid-template-rows: 100%;
-    grid-template-areas: "foto1 foto2 foto3 foto4";
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "foto1 foto2 foto3 foto4"
+                         "foto5 foto6 foto7 foto8";
    text-align: center;
    margin: 20px 0 50px 0;
+   gap: 20px;
 
+  }
+
+  .karusel{
+    width: 300px;
+    height: 400px;
+  }
+
+  .contacto {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vw;
+  }
+
+  .blog {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
   }

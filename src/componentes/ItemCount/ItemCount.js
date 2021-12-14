@@ -30,7 +30,7 @@ const ItemCount = ({initial, stock, onAdd}) =>  {
             
             </div>
             
-            <button descriButon  onClick={() => onAdd(number)} disabled={ number === 0}>
+            <button   onClick={() => onAdd(number)} disabled={ number === 0}>
                 <h4> Agregar al carrito</h4>
                 </button>
 
@@ -41,15 +41,3 @@ const ItemCount = ({initial, stock, onAdd}) =>  {
 }
 
 export default ItemCount;
-
-// const AlgoVaPasar = () => {
-//     return new Promise((resolve, reject) => {
-//         if(true){
-//             resolve('Hey todo esta bien')
-//         }else{
-//             reject('Oh no lo hice mal')
-//         }
-//     })
-// }
-
-// AlgoVaPasar()

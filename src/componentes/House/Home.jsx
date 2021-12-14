@@ -1,12 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel'
 import '../NavBar/NavBar.css'
 
+import { Fragment, useState, useEffect } from 'react'
+
 const Home = () => {
+
+ 
 
     
 
     return (
         <>
+        
           <Carousel variant="dark">
   <Carousel.Item>
     <img
@@ -39,6 +44,7 @@ const Home = () => {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+
         </>
     )
 }

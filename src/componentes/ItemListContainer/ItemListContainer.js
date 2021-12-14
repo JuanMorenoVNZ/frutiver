@@ -5,6 +5,9 @@ import ItemCount from '../ItemCount/ItemCount'
 import ItemList from '../ItemList/ItemList';
 import {items} from '../Items/Items';
 import { useParams } from 'react-router-dom';
+import db from '../Firebase/Firebase';
+import { collection, query, where, getDocs } from 'firebase/firestore';
+
 
 
 
@@ -14,27 +17,27 @@ const SeccionCentral = () => {
     const [data, setData] = useState([])
     const [loader, setLoader] = useState(true);
     const { catId } = useParams();
- 
-
+   
+   
     useEffect(() => {
-        setLoader(true);
-
-    const getItems = new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(items);
-        }, 1000);
-      });
-  
-      getItems
+      setLoader(true);
+      
+      const myItems = catId
+        ? query(collection(db, 'products'), where('category', '==', catId))
+        : collection(db, 'products');
+     
+      
+      getDocs(myItems)
         .then((res) => {
-          catId
-            ? setData(res.filter((data) => data.category === catId))
-            : setData(res);
-        })
-        .finally(() => {
-          setLoader(false);
-        });
-    },[catId]);
+          const results = res.docs.map((doc) => {
+            return { ...doc.data(), id: doc.id };
+          });
+        
+          setData(results);
+          }) 
+        .finally(() => setLoader(false));
+    }, [catId]);
+    
 
    
  

@@ -10,8 +10,11 @@ import Blog from './componentes/Blog/Blog';
 import Cart from './componentes/Cart/Cart.jsx'
 
 
+
+
 function App() {
 
+ 
 
  
 
@@ -19,6 +22,7 @@ function App() {
     <Fragment>
     <BrowserRouter>
       <NavBar/>
+      
        <Routes>
        <Route path="/" element={<Home />} />
 
@@ -33,6 +37,7 @@ function App() {
 
       
         </Routes>
+        
     </BrowserRouter>
 
     

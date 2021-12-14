@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({id, title,  price, description, pictureUrl, stock}) => {
+const Item = ({id, title,  price, description, pictureUrl,stock}) => {
     return(
         
         <Card>

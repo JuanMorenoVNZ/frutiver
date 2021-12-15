@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import './ItemDetail.css'
@@ -6,11 +6,24 @@ import ItemCount from '../ItemCount/ItemCount'
 import CartWidget from '../CartWidget/CartWidget';
 import { items } from '../Items/Items';
 import { Link } from 'react-router-dom'
+import { Context } from '../Context/Context';
 
 
 
 
-const ItemDetail = ({id, title, price, pictureUrl, detail , stock, onAdd, irAlCarrito}) => {
+const ItemDetail = ({id, title, category, price, pictureUrl, detail , stock}) => {
+
+    const [purchased, setPurchased] = useState(false);
+    const { onAdd } = useContext(Context);
+  
+    const addItem = (count) => {
+      if (count > 0) {
+        onAdd({ id, title, category, pictureUrl, price, stock }, count);
+        setPurchased(true);
+      } else {
+        alert('La cantidad debe ser mayor a cero');
+      }
+    };
 
     return (
         <div className="detailContainer">
@@ -29,8 +42,11 @@ const ItemDetail = ({id, title, price, pictureUrl, detail , stock, onAdd, irAlCa
                <h5>{detail}</h5>  
                </div>
                <div className="descripSure">
-               {irAlCarrito ? (<> <Link to="/cart"><h3>Terminar Compra</h3></Link></>) : (<><ItemCount className="SureCount" initial={0} stock={stock} onAdd={onAdd} />
-               </>)}
+               {!purchased ? (
+        <ItemCount stock={stock} initial={0} addItem={addItem} />
+      ) : (
+        <Link to="/cart">Terminar compra</Link>
+      )}
                 
                </div>
                

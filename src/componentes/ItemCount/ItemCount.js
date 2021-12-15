@@ -5,16 +5,16 @@ import '../Item/Item.css'
 
  
 
-const ItemCount = ({initial, stock, onAdd}) =>  {
-    let [number, setNumber] = useState(initial)
+const ItemCount = ({initial, stock, addItem}) =>  {
+    const [number, setNumber] = useState(initial);
 
     const incrementar = () => {
-        if (number < stock) setNumber(++number)
+        if (number < stock) setNumber(number + 1)
     };
 
 
     const disminuir = () => {
-        if (number > 0) setNumber(--number)
+        if (number  > 0) setNumber(number - 1)
     };
 
     
@@ -30,7 +30,7 @@ const ItemCount = ({initial, stock, onAdd}) =>  {
             
             </div>
             
-            <button   onClick={() => onAdd(number)} disabled={ number === 0}>
+            <button   onClick={() => addItem(number)} disabled={ number === 0}>
                 <h4> Agregar al carrito</h4>
                 </button>
 

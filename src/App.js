@@ -7,7 +7,8 @@ import { Fragment } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Contacto from './componentes/Contacto/Contacto.jsx'
 import Blog from './componentes/Blog/Blog';
-import Cart from './componentes/Cart/Cart.jsx'
+import {Cart} from './componentes/Cart/Cart'
+import { CartFuncion } from './componentes/Context/Context';
 
 
 
@@ -19,6 +20,7 @@ function App() {
  
 
   return (
+    <CartFuncion>
     <Fragment>
     <BrowserRouter>
       <NavBar/>
@@ -44,6 +46,7 @@ function App() {
 
 
     </Fragment>
+    </CartFuncion>
   );
 }
 

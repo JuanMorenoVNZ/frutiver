@@ -5,11 +5,13 @@ import { useParams } from 'react-router-dom';
 import db from '../Firebase/Firebase';
 import { doc, getDoc } from 'firebase/firestore';
 
+
+
 const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([])
     const [isLoading, setIsLoading] = useState(true);
-    const [irAlCarrito, setIrAlCarrito] = useState(false);
     const { itemId } = useParams();
+    
    
     useEffect(() => {
       setIsLoading(true);
@@ -27,10 +29,7 @@ const ItemDetailContainer = () => {
         });
     }, []);
 
-    const onAdd = (cantidad) => {
-      console.log({...detail, cantidad: cantidad});
-      setIrAlCarrito(true);
-    }
+  
 
     // useEffect(() => {
     //     setIsLoading(true);
@@ -57,7 +56,7 @@ const ItemDetailContainer = () => {
 
 
 
-      return isLoading ? <h1>CARGANDO...</h1> : <ItemDetail {...detail } onAdd={onAdd} irAlCarrito={irAlCarrito} />;
+      return isLoading ? <h1>CARGANDO...</h1> : <ItemDetail {...detail }   />;
     };
 
 export default ItemDetailContainer;

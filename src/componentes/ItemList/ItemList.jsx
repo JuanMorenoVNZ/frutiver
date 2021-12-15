@@ -7,13 +7,13 @@ import Item from "../Item/Item"
 
 
 
-const ItemList = ({ data }) => {
+const ItemList = ({ items }) => {
 
     
 
     return (
         <>
-            { data === [] ? null : data.map((product,i) => {
+            { items === [] ? null : items.map((product,i) => {
                 return(
                     <Item
                     {...product} key={product.id}

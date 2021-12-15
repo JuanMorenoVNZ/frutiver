@@ -14,7 +14,7 @@ import { collection, query, where, getDocs } from 'firebase/firestore';
 
 const SeccionCentral = () => {
 
-    const [data, setData] = useState([])
+    const [items, setItems] = useState([]);
     const [loader, setLoader] = useState(true);
     const { catId } = useParams();
    
@@ -33,7 +33,7 @@ const SeccionCentral = () => {
             return { ...doc.data(), id: doc.id };
           });
         
-          setData(results);
+          setItems(results);
           }) 
         .finally(() => setLoader(false));
     }, [catId]);
@@ -51,7 +51,7 @@ const SeccionCentral = () => {
              
              
              <div className="subBor">
-             <ItemList data={data} />
+             <ItemList items={items} />
              
             
              </div>

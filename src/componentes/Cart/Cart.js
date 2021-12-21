@@ -24,7 +24,7 @@ export const Cart = () => {
             <h5>Cantidad: {item.cantidad} items</h5>
             <h5>Subtotal: ${item.subtotal}</h5>
 
-           
+            
             <button onClick={() => onRemove(item.id)}>Eliminar</button>
           </article>
           </div>

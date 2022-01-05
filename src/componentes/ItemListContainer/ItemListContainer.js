@@ -47,7 +47,7 @@ const SeccionCentral = () => {
         <h1>CARGANDO...</h1>
       ) : ( 
 
-         <div className="titulo">
+         <div className="titulo padreHouse">
              
              
              <div className="subBor">

@@ -1,7 +1,8 @@
-import Carousel from 'react-bootstrap/Carousel'
-import '../NavBar/NavBar.css'
 
-import { Fragment, useState, useEffect } from 'react'
+import '../NavBar/NavBar.css'
+import { Link } from 'react-router-dom'
+
+import { Fragment } from 'react'
 
 const Home = () => {
 
@@ -10,42 +11,31 @@ const Home = () => {
     
 
     return (
-        <>
-        
-          <Carousel variant="dark">
-  <Carousel.Item>
-    <img
-      className="d-block m-auto karusel"
-      src="/Imagenes/foto1.jpg"
-      alt="fresa"
-    />
-    <Carousel.Caption>
-     
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block m-auto karusel"
-      src="/Imagenes/foto2.jpg"
-      alt="Durazno"
-    />
-    <Carousel.Caption>
-     
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block m-auto karusel"
-      src="/Imagenes/foto4.jpg"
-      alt="Manzana"
-    />
-    <Carousel.Caption>
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+      <Fragment >
+        <div clasName="padre">
+        <div className="padreHouse">
 
-        </>
+          <div className="home">
+
+            <div className="homeUno">
+
+              <h1>
+                Bienvenido a Mundo Fresco 
+                 </h1>
+                 <div className="boton">
+
+                <button className="botonHome "> Conoce mis productos</button>
+
+             </div>
+ 
+
+            </div>
+          </div>
+        
+</div>
+</div>
+
+        </Fragment>
     )
 }
 

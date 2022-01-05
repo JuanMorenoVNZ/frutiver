@@ -7,7 +7,8 @@ const Contacto = () => {
     
 
     return (
-        <div className="contacto">
+      <div className="padreHouse">
+        <div className="contacto ">
         <Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Correo</Form.Label>
@@ -29,6 +30,7 @@ const Contacto = () => {
   </Button>
 </Form>
           
+        </div>
         </div>
     )
 }

@@ -7,28 +7,21 @@ import { Link } from 'react-router-dom'
 
 const Item = ({id, title,  price, description, pictureUrl,stock}) => {
     return(
+
+        <Card className="padreHouse" style={{ width: '18rem' }}>
+        <Link to={`/product/${id}`} className="ItemLine">
+        <Card.Img variant="top"  src={pictureUrl}  />
+         </Link>
+       <Card.Body>
+        <Card.Title>{title}</Card.Title>
+       <Card.Text>
+        ${price}
+    </Card.Text>
+    <Button variant="primary">Ir a pedir</Button>
+  </Card.Body>
+</Card>
         
-        <Card>
-            <Card.Body>
-            
-                <Card.Title>
-                    {title}
-                </Card.Title>
-                <Link to={`/product/${id}`} className="ItemLine">
-                <Card.Img
-                    variant="top"
-                    src={pictureUrl} 
-                />
-                </Link>
-                <Card.Text>
-                    ${price}
-                </Card.Text>
-                
-               
-                 
-                
-            </Card.Body>
-        </Card>
+       
        
     )
 }

@@ -16,18 +16,19 @@ function NavBar() {
   
   return (
     <div className="NavBar">
-        <Navbar  bg="black" variant="dark" sticky="top" expand="sm" collapseOnSelect>
-            <Navbar.Brand >
-                <img src='/Imagenes/fresh.jpg' width="70px" height="60px"/>
+        <Navbar className="NavTo" variant="dark" sticky="top" expand="sm" collapseOnSelect>
+            <Navbar.Brand id="navBran" >
+             
+                <img src='/Imagenes/logoreact1.png' width="90px" height="75px"/>
                 Mundo Fresco
 
                 
                 
-            </Navbar.Brand>
+            </Navbar.Brand >
             
          
         <Navbar.Toggle className="coloring" />
-        <Navbar.Collapse>
+        <Navbar.Collapse >
           <Nav>
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <NavDropdown title="Productos">

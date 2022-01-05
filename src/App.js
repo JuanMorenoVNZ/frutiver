@@ -9,6 +9,7 @@ import Contacto from './componentes/Contacto/Contacto.jsx'
 import Blog from './componentes/Blog/Blog';
 import {Cart} from './componentes/Cart/Cart'
 import { CartFuncion } from './componentes/Context/Context';
+import { FooterContainer } from './componentes/PieDePagina/FooterContainer'
 
 
 
@@ -37,9 +38,9 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/cart" element={<Cart/>} />
 
-      
-        </Routes>
         
+        </Routes>
+        <FooterContainer/>
     </BrowserRouter>
 
     

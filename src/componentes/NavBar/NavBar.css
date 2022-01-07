@@ -42,23 +42,30 @@
 
   .titulo{
 
-    height: 800px
+    height: 980px;
     
   }
 
   .subBor{
+    display: grid;
 
+  width: 100%;
+
+  }
+
+  .subBorHijo{
     display: grid;
   
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas: "n n n n"
-                         "foto1 foto2 foto3 foto4"
+    grid-template-rows: 40% 40% ;
+    grid-template-areas: "foto1 foto2 foto3 foto4"
                          "foto5 foto6 foto7 foto8";
    text-align: center;
    justify-content: center;
-   margin: 0px 0 30px 0;
+ 
    gap: 10px;
-
+   margin: 35px 0 0 30px;
+   
+      height: 900px;
   }
 
   .karusel{
@@ -93,11 +100,17 @@
   .carPadre{
     margin: 0 0 0 30px;
   }
+  .card-body .card-title h5 {
+    color: white;
+    font-size:  2.5rem;
+    
+  }
   
   .carTitle{
     display: flex;
    justify-content: center;
    margin-top: 20px;
+ 
   }
   .carPage{
     display: inline-flex;
@@ -122,12 +135,13 @@
   }
 .padre{
   width: 3000px;
+ 
   
 }
   .padreHouse{
    
     background-image: url("./huerto.jpg");
-   min-height: 500PX;
+    
    width: 100%;
    background-repeat: no-repeat;
    background-position: center center;
@@ -139,7 +153,8 @@
       
       display: grid;
       justify-content: center;
-      align-items: center;
+      
+      height: 550px;
     }
 
     .homeUno h1 {
@@ -148,7 +163,7 @@
       font-family: 'Merriweather', serif;
       border-radius: 8px;
       padding: 10px;
-      margin-top: 100px;
+      margin-top: 50px;
       border: 3px solid transparent;
     }
 

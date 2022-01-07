@@ -45,7 +45,7 @@ const ItemDetail = ({id, title, category, price, pictureUrl, detail , stock}) =>
                {!purchased ? (
         <ItemCount stock={stock} initial={0} addItem={addItem} />
       ) : (
-        <Link to="/cart">Terminar compra</Link>
+        <Link to="/cart"> <Button variant="outline-success">Terminar Compra</Button>{' '}</Link>
       )}
                 
                </div>

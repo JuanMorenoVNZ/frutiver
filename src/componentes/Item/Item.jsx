@@ -5,20 +5,24 @@ import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
+
 const Item = ({id, title,  price, description, pictureUrl,stock}) => {
     return(
 
         <Card className="padreHouse" style={{ width: '18rem' }}>
-        <Link to={`/product/${id}`} className="ItemLine">
+      
         <Card.Img variant="top"  src={pictureUrl}  />
-         </Link>
+       
        <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="text-light ">{title}</Card.Title>
        <Card.Text>
-        ${price}
+        Precio: ${price}
     </Card.Text>
-    <Button variant="primary">Ir a pedir</Button>
+    <Link to={`/product/${id}`} className="ItemLine">
+    <Button variant="dark">Ir a pedir</Button>
+    </Link>
   </Card.Body>
+ 
 </Card>
         
        

@@ -43,7 +43,7 @@ export const Cart = () => {
   
   <>
     {!goTicket ? (
-      <div className="padreHouse">
+      <div className="">
         <h1>Estas son tus compras</h1>
         {cart.map((item) => (
          <div className="carPage">

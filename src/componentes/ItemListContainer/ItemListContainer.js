@@ -51,8 +51,9 @@ const SeccionCentral = () => {
              
              
              <div className="subBor">
+               <div className="subBorHijo">
              <ItemList items={items} />
-             
+             </div>
             
              </div>
             

@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../Context/Context";
 import { Link } from "react-router-dom";
-import '../NavBar/NavBar.css'
-
+import './Cart.css'
 import { getFirestore, collection, addDoc } from 'firebase/firestore'
 import Order from '../Order/Order'
+import { RiShoppingCartLine } from "react-icons/ri";
 
 export const Cart = () => {
   
@@ -44,7 +44,7 @@ export const Cart = () => {
   <>
     {!goTicket ? (
       <div className="">
-        <h1>Estas son tus compras</h1>
+        <h1>Tu carrito <RiShoppingCartLine/> </h1>
         {cart.map((item) => (
          <div className="carPage">
          <article key={item.id}>

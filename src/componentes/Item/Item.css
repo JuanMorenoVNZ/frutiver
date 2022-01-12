@@ -1,12 +1,12 @@
 
  div .card {
-    width: 300px;
+    width: 250px;
     margin: 0 0 0 20px;
     border: 2.5px solid#007299, #10779d, #1b7da1, #2482a5, #2c88a9, #368cab, #3e8fad, #4693af, #5096af, #5a99b0, #629cb0, #6b9fb1;
     background-image: linear-gradient(to bottom, #007299, #10779d, #1b7da1, #2482a5, #2c88a9, #368cab, #3e8fad, #4693af, #5096af, #5a99b0, #629cb0, #6b9fb1);
     margin-bottom: 10px;
     border-radius: 1px solid#007299, #10779d, #1b7da1, #2482a5, #2c88a9, #368cab, #3e8fad, #4693af, #5096af, #5a99b0, #629cb0, #6b9fb1;
-  
+    align-items: center;
    
     
   }
@@ -18,8 +18,11 @@
      
   }
 
-  .card-img-top {
-      height: 150px;
+  .card .card-img-top {
+      margin-top: 0.4rem;
+      height: 100px;
+      width: 130px;
+    
   }
   p.card-text{
       font-size: 1.6rem;
@@ -46,5 +49,12 @@ div.text-light{
     font-size:  1.8rem;
     
   }
+div .descripSure .btn {
+    display: flex;
+}
 
+a .btn-dark:hover{
+    background: rgb(44, 255, 1);
+    border: rgb(44, 255, 1);
+}
   

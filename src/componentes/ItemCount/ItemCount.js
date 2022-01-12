@@ -1,6 +1,5 @@
 import React, {Fragment, useState} from "react"
 import 'bootstrap/dist/css/bootstrap.css';
-import SeccionCentral from '../ItemListContainer/ItemListContainer'
 import '../Item/Item.css'
 
  

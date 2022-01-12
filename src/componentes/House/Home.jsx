@@ -24,7 +24,7 @@ const Home = () => {
                  </h1>
                  <div className="boton">
 
-                <button className="botonHome "> Conoce mis productos</button>
+               <Link to="/misProductos"> <button className="botonHome "> Conoce mis productos</button></Link>
 
              </div>
  

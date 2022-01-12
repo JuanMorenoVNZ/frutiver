@@ -183,3 +183,29 @@
     .botonHome:hover{
       background: rgb(44, 255, 1);
     }
+
+    
+  @media only screen and (max-width: 1600px) {
+
+    .subBorHijo{
+      display: grid;
+    
+      grid-template-rows: 35% 35% 35% ;
+      grid-template-areas: "foto1 foto2 foto3"
+                           "foto4 foto5 foto6"
+                           "foto7 foto8 foto9";
+     text-align: center;
+     justify-content: center;
+   
+     gap: 10px;
+     margin: 35px 0 0 30px;
+     
+        height: 900px;
+    }
+
+    .titulo{
+
+      height: 1080px;
+      
+    }
+  }

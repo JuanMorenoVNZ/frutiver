@@ -11,8 +11,7 @@ export function FooterContainer() {
                 <Footer.Column>
                 <Footer.Title>Sobre Nosotros</Footer.Title>
                     <Footer.Link  as={Link}  to="/blog">Blog</Footer.Link>
-                    <Footer.Link href="#">Clientes</Footer.Link>
-                    <Footer.Link href="#">Testimonios</Footer.Link>
+                   
                 </Footer.Column>
 
                 <Footer.Column>

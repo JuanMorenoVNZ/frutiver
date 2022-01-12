@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 const Item = ({id, title,  price, description, pictureUrl,stock}) => {
     return(
 
-        <Card className="padreHouse" style={{ width: '18rem' }}>
+        <Card className="padreHouse mb-6-4-2" style={{ width: '16rem' }}>
       
         <Card.Img variant="top"  src={pictureUrl}  />
        
@@ -19,7 +19,7 @@ const Item = ({id, title,  price, description, pictureUrl,stock}) => {
         Precio: ${price}
     </Card.Text>
     <Link to={`/product/${id}`} className="ItemLine">
-    <Button variant="dark">Ir a pedir</Button>
+    <Button className="" variant="dark">Ir a pedir</Button>
     </Link>
   </Card.Body>
  

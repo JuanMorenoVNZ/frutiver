@@ -45,12 +45,12 @@ const CartFuncion = ({ children }) => {
 
 
  
-  const onRemove = (id) => {
+  const onRemove = (item) => {
   
-    const myItem = cart.find((item) => item === item);
+    const myItem = cart.find((p) => p.id === item.id);
     
 
-    const cartAux = cart.filter((item) => item !== item);
+    const cartAux = cart.filter((p) => p.id !== item.id);
 
   
     setCart(cartAux);
@@ -59,6 +59,8 @@ const CartFuncion = ({ children }) => {
 
     setTotal(total - myItem.subtotal);
   };
+
+
 
   const clearCart = () => {
     setCart([])

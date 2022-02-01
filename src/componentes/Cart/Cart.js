@@ -34,7 +34,7 @@ export const Cart = () => {
     console.log(newOrder)
     addDoc(ref, newOrder)
     setGoTicket(true)
-    onRemove()
+    clearCart()
   }
   
 
@@ -42,54 +42,62 @@ export const Cart = () => {
   return( <>
   
   <>
+  <div className="tituloCart">
+          <h1>Tu carrito <RiShoppingCartLine/> </h1>
+          
+        </div>
+        <span className="linea"></span>
     {!goTicket ? (
       <div className="">
-        <h1>Tu carrito <RiShoppingCartLine/> </h1>
+     
         {cart.map((item) => (
-         <div className="carPage">
-         <article key={item.id}>
-           <h2>{item.title}</h2>
-           <img src={item.pictureUrl} alt={item.title} height="120px" margin="0" />
+
+       
+         <div className="infoCart">
+         <div className="kart" key={item.id}>
+           <h2 className="nombreProducto">{item.title} <button className="bEliminar" onClick={() => onRemove(item)}>X</button></h2>
+           <img src={item.pictureUrl} alt={item.title} height="80px" margin="0" />
            <h5>Precio individual: ${item.price}</h5>
            <h5>Cantidad: {item.cantidad} items</h5>
            <h5>Subtotal: ${item.subtotal}</h5>
+          
 
            
-           <button onClick={() => onRemove(item)}>Eliminar</button>
-         </article>
+          
+         </div>
          </div>
          
         ))}
         {total > 0 ? (
-          <>
+          <div>
             <p className="totalcompra">Total compra: $ {total}</p>
             <button className="B-vaciar" onClick={clearCart}>
               Vaciar Carrito
             </button>
-          </>
+          </div>
         ) : (
-          <>
+          <div>
             <p>No agregaste nada todavía</p>
             <h2><Link to="/misProductos">Vuelve a productos</Link></h2>
-          </>
+          </div>
         )}
         <div />
-        <div className="formuser">
+        <div className="formTi">
           <form metod="POST" onSubmit={finalizar}>
-            <p>Completá tus datos para finalizar la compra</p>
-            <input
+            <h3 className="">Completá tus datos para finalizar la compra</h3>
+            <label name="nombre" value="name">Nombre: <input
               onChange={llenarForm}
               type="name"
               name="nombre"
-              placeholder="Nombre"
-            />
-            <input
+              placeholder="Ingresa tu nombre"
+            /></label>  
+            <label name="email" value="email">Correo: <input
               onChange={llenarForm}
               type="email"
               name="email"
-              placeholder="Email"
-            />
-            <button
+              placeholder="Ingresa tu correo"
+            /></label>
+            <button className="B-vaciar"
               disabled={
                 cart?.length === 0 ||
                 form.nombre === '' ||
@@ -112,4 +120,3 @@ export const Cart = () => {
 }
    
 export default Cart
-

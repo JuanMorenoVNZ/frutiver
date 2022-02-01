@@ -44,7 +44,7 @@ const SeccionCentral = () => {
 
 
     return loader ? (
-        <h1>CARGANDO...</h1>
+        <h1 className="padreHouse">CARGANDO...</h1>
       ) : ( 
 
          <div className="titulo padreHouse">

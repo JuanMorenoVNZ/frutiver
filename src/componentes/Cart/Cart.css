@@ -1,0 +1,80 @@
+.tituloCart{
+	display: flex;
+	justify-content: center;
+    margin-top: 20px;
+	align-items: center;
+}
+
+
+.linea{
+	background-image: linear-gradient(to bottom, #007299, #10779d, #1b7da1, #2482a5, #2c88a9, #368cab, #3e8fad, #4693af, #5096af, #5a99b0, #629cb0, #6b9fb1);
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.infoCart{
+	display: inline-flex;
+    align-items: center;
+	margin: 20px 5px 0 40px;
+
+	
+
+}
+
+.nombreProducto{
+	font-size: 2rem;
+}
+
+.kart{
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalcompra{
+	margin: 40px 0 20px 40px;
+	font-size: 2rem;
+	
+
+	border-radius: 3px;
+
+}
+
+.bEliminar{
+	color: rgb(0, 0, 0);
+	background: none;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	border:rgb(0, 0, 0) ;
+
+
+}
+
+.bEliminar:hover{
+	color: rgb(255, 0, 0);
+}
+
+.B-vaciar{
+	margin: 0 0 30px 40px;
+    border: hidden;
+	font-size: 1.2rem;
+	border-radius: 5px ;
+	background-image: linear-gradient(to bottom, #007299, #10779d, #1b7da1, #2482a5, #2c88a9, #368cab, #3e8fad, #4693af, #5096af, #5a99b0, #629cb0, #6b9fb1);
+}
+
+.B-vaciar:hover{
+	background: rgb(255, 0, 0);
+
+}
+
+.formTi{
+	margin: 0 0 20px 20px;
+}
+.formTi h3{
+	margin: 0 0 20px 20px;
+}
+
+.formTi label{
+	margin: 20px 0 20px 20px;
+}

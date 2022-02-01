@@ -39,18 +39,23 @@ const Order = () => {
     })
   }, [email])
   return (
-    <div className="order-box">
+    <div className="order-box padreOrden">
       {order?.lenght === 0 ? (
         <h1>Cargando...</h1>
       ) : (
-        <>
-          <h1>Aca dejamos tus tikets de compra</h1>
+        <div className="padreOrden">
+          <h1 className="tituloOrden">Aca dejamos tus tikets de compra</h1>
           {order.map((ord) => (
             <Mensaje key={ord.id} ord={ord} />
           ))}
-        </>
+        </div>
       )}
-      <Link to="/misProductos">Volver a Home</Link>
+      <Link to="/"><button className="boton">
+  <span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front text"> Inicio
+  </span>
+</button></Link>
     </div>
   )
 }

@@ -7,11 +7,11 @@ const Mensaje = ({ ord }) => {
 
   return (
     <div className="mensaje-box">
-      <h3>Nombre del Producto: {detailProd.name}</h3>
-      <h3>Total: ${ord.total}</h3>
-      <p>Id de la compra: {ord.id}</p>
-      <p>Fecha: {ord.date}</p>
-      <p>Email: {ord.buyer}</p>
+      <h4>Nombre del Producto: {detailProd.name}</h4>
+      <h5>Total: ${ord.total}</h5>
+      <h6>Id de la compra: {ord.id}</h6>
+      <h6>Fecha: {ord.date}</h6>
+      <h6>Email: {ord.buyer}</h6>
     </div>
   )
 }

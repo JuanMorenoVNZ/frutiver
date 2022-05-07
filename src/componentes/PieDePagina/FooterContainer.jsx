@@ -16,7 +16,7 @@ export function FooterContainer() {
 
                 <Footer.Column>
                 <Footer.Title>Redes sociales</Footer.Title>
-                    <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
+                    <Footer.Link href="https://www.facebook.com/juan.m.jm.73/"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-whatsapp" />Whatsapp</Footer.Link>
                 </Footer.Column>

@@ -84,7 +84,7 @@ export const Cart = () => {
         <div />
         <div className="formTi">
           <form metod="POST" onSubmit={finalizar}>
-            <h3 className="">Completá tus datos para finalizar la compra</h3>
+            <h3 className="">Completa tus datos para finalizar la compra</h3>
             <label name="nombre" value="name">Nombre: <input
               onChange={llenarForm}
               type="name"
